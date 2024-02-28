@@ -1,0 +1,54 @@
+public class make_me_big {
+
+    static void sort(int[] arr){
+        for(int i=0 ;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]<arr[j]){
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+    }
+    static void sortforchar(char[] arr){
+        for(int i=0 ;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]<arr[j]){
+                    char temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+        String s = new String(arr);
+        System.out.println(Integer.parseInt(s));
+    }
+    public static void main(String[] args) {
+
+//        int n = 44872, m = n;
+//        int c = 0;
+//        while (m != 0) {
+//            m = m / 10;
+//            c++;
+//        }
+//        int []arr =new int[c];
+//        for(int i=0 ; i<arr.length;i++){
+//            arr[i]=n%10;
+//            n=n/10;
+//
+//        }
+//        sort(arr);
+//        for(int ele:arr){
+//            System.out.print(ele);
+
+        int num=123873;
+        String  s=num+"";
+
+        char[] c= s.toCharArray();
+        sortforchar(c);
+
+        }
+    }
+
+
