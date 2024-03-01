@@ -47,7 +47,7 @@ public class make_me_big {
 
         char[] c= s.toCharArray();
         sortforchar(c);
-System.out.println("hello")
+System.out.println("hello");
 
 
         }
